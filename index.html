@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e033a55a0a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="target">
+
+            <div class="card-img">
+
+                <img src="img/pexels-maria-orlova-4946591.jpg" alt="">
+
+            </div>
+                        
+            <div class="card-info">
+
+                <h2>Title</h2>
+                <p>description</p>                
+    
+                <a id="net-1" href="#">facebook</a>
+                <a id="net-2" href="#">twitter</a>
+                <div class="likes">
+                    
+                    <i class="far fa-thumbs-up like">
+                        <span id="span">0</span></i>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+
+    var i = 0
+    let like = document.querySelector('.like')
+    like.onclick = ()=>{
+
+        i++
+        let span = document.getElementById('span')
+        span.innerHTML = i
+
+    }
+
+</script>
+</html>
